@@ -1,0 +1,287 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 130px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+
+.banner {
+    text-align: center;
+    padding: 50px;
+    background-color: #222;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    padding: 20px;
+    background-color: #111;
+}
+
+.products .product {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.products .product img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.products .product:hover {
+    transform: scale(1.05);
+    background-color: #444;
+    box-shadow: 0px 0px 20px 5px rgba(255, 165, 0, 0.8);
+}
+
+select {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+select:hover {
+    border-color: #555;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    background-color: #111;
+    border-top: 2px solid #333;
+    text-align: center;
+    width: 100%;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer .footer-links a {
+    text-decoration: none;
+    color: #00bfff;
+}
+
+footer .address {
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #f39c12;
+}
+
+h2 {
+    color: #f39c12;
+    margin-top: 30px;
+}
+
+h3 {
+    color: white;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: gold;
+}
+
+.socials {
+    margin-top: 20px;
+}
+
+.socials a {
+    color: #f39c12;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+.job-listing {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
+}
+
+.job-listing button {
+    background: #f39c12;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.job-listing button:hover {
+    background: #e67e22;
+}
+
+.about-section {
+    text-align: center;
+    padding: 50px;
+    background: #222;
+}
+
+.about-section h1 {
+    font-size: 2.5em;
+    color: #f39c12;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+.video-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.video-container iframe {
+    width: 80%;
+    max-width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-container img {
+        width: 100px;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .products .product {
+        padding: 15px;
+    }
+
+    .products .product img {
+        width: 80%;
+    }
+
+    .banner {
+        padding: 30px;
+    }
+
+    .job-listing {
+        padding: 15px;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    footer .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
